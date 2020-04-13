@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React , { Component } from 'react';
+import { Switch , Route } from 'react-router-dom';
+import Main from './components/Main';
+import Thanks from './components/Thanks';
+import continents from './containers/continents';
+import quizz from './containers/quizz';
+
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <Switch>
+        <Route path="/" exact component={Main} />
+        <Route path="/choose" component={continents} />
+        <Route path="/thanks" component={Thanks} />
+        <Route path="/quizz" component={quizz} />
+      </Switch>
+    );
+  }
 }
 
 export default App;
