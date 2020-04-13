@@ -15,7 +15,7 @@ class Quizz extends Component {
   }
   componentWillMount(){
     if(Object.keys(this.props.data).length === 0 && this.props.data.constructor === Object){
-      this.props.history.push('https://hbenhamza-quizz-game.netlify.com/')
+      window.location = 'https://hbenhamza-quizz-game.netlify.com/';
     }else{
       this.props.ExtractItemsAction(this.props.data.continent);
       setTimeout(
