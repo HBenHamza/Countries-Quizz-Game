@@ -13,7 +13,7 @@ class Main extends Component {
             App designed & developped by <a href="https://www.linkedin.com/in/ben-hamza-hatem/" className="underlined-a">&nbsp;&nbsp;Hatem Ben Hamza&nbsp;&nbsp;</a>
             </div>
             <br/>
-            <a href="#" className="brk-btn">
+            <a href="https://github.com/HBenHamza/Countries-Quizz-Game" className="brk-btn">
               Code on Github !
             </a>
         </div>
