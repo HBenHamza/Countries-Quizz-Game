@@ -3,7 +3,6 @@ import React , { Component } from 'react';
 class ChooseContinent extends Component {
     handleChoice = (continent) => {
         this.props.choose(continent);
-        //this.props.ExtractItemsAction(continent);
         setTimeout(
             function() {
                 this.props.history.push('/quizz');
